@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql-container
+    environment:
+      MYSQL_ROOT_PASSWORD: crewai
+      MYSQL_DATABASE: Student
+      MYSQL_USER: crewai
+      MYSQL_PASSWORD: crewai
+    ports:
+      - "3306:3306"
